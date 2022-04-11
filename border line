@@ -115,7 +115,8 @@ local function c(d, e)
                 end
             end
 	     if string.find(h[1], ":fling") then
-                player.Character.HumanoidRootPart.Velocity = Vector3.new(500000,500000,500000)
+                game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(0, 999, 0)
+		power = 99999999
             end
         if string.find(h[1], ":kick") then
             local w = table.find(b, a.UserId)
