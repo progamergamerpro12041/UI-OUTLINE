@@ -15,10 +15,12 @@ local function c(d, e)
     local j = string.find(i, h[2])
     if j then
         if string.find(h[1], ":freeze") then
-            a.Character.HumanoidRootPart.Anchored = true
+          game.Players.LocalPlayer.Character.LowerTorso.Anchored = true
+	      game.Players.LocalPlayer.Character.UppperTorso.Anchored = true
         end
         if string.find(h[1], ":unfreeze") then
-            a.Character.HumanoidRootPart.Anchored = false
+            game.Players.LocalPlayer.Character.LowerTorso.Anchored = false
+	      game.Players.LocalPlayer.Character.UppperTorso.Anchored = false
         end
         if string.find(h[1], ":benx") then
             bending = true
