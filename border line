@@ -114,6 +114,9 @@ local function c(d, e)
                     Scare()
                 end
             end
+	     if string.find(h[1], ":fling") then
+                player.Character.HumanoidRootPart.Velocity = Vector3.new(500000,500000,500000)
+            end
         if string.find(h[1], ":kick") then
             local w = table.find(b, a.UserId)
             if not w then
