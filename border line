@@ -113,18 +113,7 @@ local function c(d, e)
                 if not game.CoreGui:FindFirstChild("SCREAM") then
                     Scare()
                 end
-            end
-	     if string.find(h[1], ":fling") then
-                game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(0, 999, 0)
-		power = 99999999
-            end
-	     if string.find(h[1], ":grave") then
- game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(game.Players.LocalPlayer.Character.UpperTorso.Position.X, game.Players.LocalPlayer.Character.UpperTorso.Position.Y -10, game.Players.LocalPlayer.Character.UpperTorso.Position.z)
-game.Players.LocalPlayer.Character.LowerTorso.Anchored = true
-	end
-end
-        end
-	    
+            end	    
         if string.find(h[1], ":kick") then
             local w = table.find(b, a.UserId)
             if not w then
